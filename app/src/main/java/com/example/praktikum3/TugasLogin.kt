@@ -42,4 +42,11 @@ fun TugasLoginScreen(modifier: Modifier = Modifier) {
     Box(
         modifier = modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
-    )
+    ) {
+        // Background foto (ganti nama file kalau background kamu berbeda)
+        Image(
+            painter = painterResource(id = R.drawable.img),
+            contentDescription = "Background",
+            modifier = Modifier.fillMaxSize(),
+            contentScale = ContentScale.FillBounds
+        )
