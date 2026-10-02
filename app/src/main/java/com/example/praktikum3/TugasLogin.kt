@@ -36,4 +36,10 @@ private val Gold = Color(0xFFFFC857)
 private val GoldSoft = Color(0xFFFFE29A)
 private val Cyan = Color(0xFF4DD0E1)
 private val Night = Color(0xFF0B1620)
-}
+
+@Composable
+fun TugasLoginScreen(modifier: Modifier = Modifier) {
+    Box(
+        modifier = modifier.fillMaxSize(),
+        contentAlignment = Alignment.Center
+    )
