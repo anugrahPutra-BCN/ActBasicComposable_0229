@@ -50,3 +50,19 @@ fun TugasLoginScreen(modifier: Modifier = Modifier) {
             modifier = Modifier.fillMaxSize(),
             contentScale = ContentScale.FillBounds
         )
+
+        // Overlay gradien supaya teks lebih terbaca dan terlihat elegan
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(
+                    Brush.verticalGradient(
+                        colors = listOf(
+                            Night.copy(alpha = 0.85f),
+                            Night.copy(alpha = 0.35f),
+                            Night.copy(alpha = 0.55f),
+                            Night.copy(alpha = 0.90f)
+                        )
+                    )
+                )
+        )
