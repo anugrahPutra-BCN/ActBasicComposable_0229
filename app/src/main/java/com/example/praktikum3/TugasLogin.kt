@@ -30,3 +30,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+
+// Palet warna
+private val Gold = Color(0xFFFFC857)
+private val GoldSoft = Color(0xFFFFE29A)
+private val Cyan = Color(0xFF4DD0E1)
+private val Night = Color(0xFF0B1620)
+}
