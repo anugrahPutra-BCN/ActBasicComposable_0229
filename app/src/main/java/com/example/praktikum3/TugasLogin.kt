@@ -66,3 +66,135 @@ fun TugasLoginScreen(modifier: Modifier = Modifier) {
                     )
                 )
         )
+
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(horizontal = 24.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Spacer(modifier = Modifier.height(48.dp))
+
+            // Judul
+            Text(
+                text = "Login",
+                fontSize = 36.sp,
+                fontWeight = FontWeight.ExtraBold,
+                letterSpacing = 4.sp,
+                color = Color.Black,
+                style = TextStyle(
+                    shadow = Shadow(
+                        color = Cyan.copy(alpha = 0.6f),
+                        offset = Offset(0f, 0f),
+                        blurRadius = 24f
+                    )
+                )
+            )
+
+            Spacer(modifier = Modifier.height(6.dp))
+
+            // Garis aksen kecil di bawah judul
+            Box(
+                modifier = Modifier
+                    .size(width = 48.dp, height = 3.dp)
+                    .clip(RoundedCornerShape(50))
+                    .background(Gold)
+            )
+
+            Spacer(modifier = Modifier.height(10.dp))
+
+            Text(
+                text = "Ini adalah halaman login,",
+                fontSize = 14.sp,
+                letterSpacing = 0.5.sp,
+                color = Color.Black.copy(alpha = 0.8f)
+            )
+
+            Spacer(modifier = Modifier.height(28.dp))
+
+            Box(
+                modifier = Modifier
+                    .size(120.dp)
+                    .shadow(12.dp, CircleShape, ambientColor = Gold, spotColor = Gold)
+                    .border(3.dp, Gold, CircleShape)
+                    .padding(3.dp)
+                    .clip(CircleShape)
+                    .background(Color.White),
+                contentAlignment = Alignment.Center
+            ) {
+                Image(
+                    painter = painterResource(id = R.drawable.images),
+                    contentDescription = "Logo UMY",
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .scale(1.25f),
+                    contentScale = ContentScale.Crop
+                )
+            }
+
+            Spacer(modifier = Modifier.height(28.dp))
+
+            // Nama dan NIM
+            Text(
+                text = "NAMA",
+                fontSize = 13.sp,
+                fontWeight = FontWeight.Bold,
+                letterSpacing = 4.sp,
+                color = Gold
+            )
+
+            Spacer(modifier = Modifier.height(4.dp))
+
+            Text(
+                text = "Anugrah Putra Rizkia",
+                fontSize = 22.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Black,
+                textAlign = TextAlign.Center
+            )
+
+            Spacer(modifier = Modifier.height(12.dp))
+
+            Box(
+                modifier = Modifier
+                    .clip(RoundedCornerShape(50))
+                    .background(Color.White.copy(alpha = 0.12f))
+                    .border(1.dp, Gold.copy(alpha = 0.6f), RoundedCornerShape(50))
+                    .padding(horizontal = 22.dp, vertical = 8.dp)
+            ) {
+                Text(
+                    text = "20240140229",
+                    fontSize = 20.sp,
+                    fontWeight = FontWeight.Bold,
+                    letterSpacing = 2.sp,
+                    color = GoldSoft
+                )
+            }
+
+            Spacer(modifier = Modifier.height(28.dp))
+
+            // Foto lingkaran dengan bingkai gradien dan bayangan
+            Box(
+                modifier = Modifier
+                    .size(210.dp)
+                    .shadow(20.dp, CircleShape, ambientColor = Gold, spotColor = Gold)
+                    .border(
+                        width = 5.dp,
+                        brush = Brush.sweepGradient(listOf(Gold, Cyan, Gold, Cyan, Gold)),
+                        shape = CircleShape
+                    )
+                    .padding(7.dp)
+                    .clip(CircleShape)
+                    .background(Color.White),
+                contentAlignment = Alignment.Center
+            ) {
+                Image(
+                    painter = painterResource(id = R.drawable.img_1),
+                    contentDescription = "Foto Anugrah",
+                    modifier = Modifier.fillMaxSize(),
+                    contentScale = ContentScale.Crop
+                )
+            }
+        }
+    }
+}
